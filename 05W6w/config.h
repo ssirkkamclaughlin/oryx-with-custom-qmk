@@ -4,6 +4,8 @@
 #undef TAPPING_TERM
 #define TAPPING_TERM 175
 
+#define RETRO_SHIFT 500
+
 #define QUICK_TAP_TERM 0
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
