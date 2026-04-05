@@ -722,7 +722,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record)
 {
-  return (keycode >= QK_MOD_TAP && keycode <= QK_MOD_TAP_MAX);
+  return get_autoshift_state() && (keycode >= QK_MOD_TAP && keycode <= QK_MOD_TAP_MAX);
 }
 
 void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record)
